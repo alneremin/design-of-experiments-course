@@ -111,6 +111,9 @@ class GazeboControl:
 ```bash
 sudo apt install python3-gz-transport13
 ```
+
+> В случае отсутствия пакета необходимо добавить источники в apt (см. [Binary Install Ubuntu](https://gazebosim.org/api/transport/13/installation.html)).
+
 > Обратите внимание, что каждой версии симулятора соответствует своя версия API. Порядковый номер можно посмотреть в [списке релизов](https://github.com/gazebosim/gz-transport/releases).
 
 Чтобы работать с Gazebo, в инициализации объекта класса *GazeboControl* создадим узел Node, предварительно импортировав его из *gz.transport13*
