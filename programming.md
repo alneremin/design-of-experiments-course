@@ -465,6 +465,7 @@ class NavigationControl:
 
 ...
 from experiment_package.navigation_control import NavigationControl
+from rcl_interfaces.msg import ParameterType
 
 def main(argv=sys.argv):
 
@@ -476,7 +477,7 @@ def main(argv=sys.argv):
     executor_thread = threading.Thread(target=executor.spin, daemon=True)
     executor_thread.start()
 
-    nav_control = NavigationControl()
+    nav_control = NavigationControl(node)
 
     node.get_logger().info("Experiment started.")
     nav_control.change_nav2_parameter("FollowPath.sim_time", ParameterType.PARAMETER_DOUBLE, 5.0)
@@ -968,7 +969,7 @@ def main(argv=sys.argv):
     executor_thread = threading.Thread(target=executor.spin, daemon=True)
     executor_thread.start()
 
-    nav_control = NavigationControl()
+    nav_control = NavigationControl(node)
     gz_control = GazeboControl()
 
     control_factors = {
