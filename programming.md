@@ -979,7 +979,8 @@ def main(argv=sys.argv):
         "robot_start_gz_pose": [1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0],
         "amcl_start_robot_pose": [1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0],
         "amcl_target_robot_pose": [7.0, 7.0, 0.0, 0.0, 0.0, 0.0, 1.0],
-        "obstacle_pose": [4.0, 4.0, 0.5, 0.0, 0.0, 0.3824995, 0.9239557]
+        "obstacle_pose": [4.0, 4.0, 0.5, 0.0, 0.0, 0.3824995, 0.9239557],
+        "robot_name": "artbul"
     }
 
     columns_names = ["index", "planning_horizon", "obstacle_type", "nav_status", "nav_time"]
