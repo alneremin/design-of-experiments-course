@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+  <model name="obstacles_sparse">
+    <static>true</static>
+    <pose>4 4 0.5 0 0 0.785</pose> 
+    
+    <link name="box_1">
+      <pose>-1.5 0.7 0 0 0 0</pose>
+      <collision name="c1"><geometry><box><size>1 1 1</size></box></geometry></collision>
+      <visual name="v1"><geometry><box><size>1 1 1</size></box></geometry>
+        <material><ambient>0.4 0.8 0.4 1</ambient><diffuse>0.4 0.8 0.4 1</diffuse></material>
+      </visual>
+    </link>
+
+    <link name="box_2">
+      <pose>1.5 -0.5 0 0 0 0</pose>
+      <collision name="c2"><geometry><box><size>1 1 1</size></box></geometry></collision>
+      <visual name="v2"><geometry><box><size>1 1 1</size></box></geometry>
+        <material><ambient>0.4 0.8 0.4 1</ambient><diffuse>0.4 0.8 0.4 1</diffuse></material>
+      </visual>
+    </link>
+    
+    <link name="box_3">
+      <pose>2.0 2.0 0 0 0 0</pose> 
+      <collision name="c3"><geometry><box><size>1 1 1</size></box></geometry></collision>
+      <visual name="v3"><geometry><box><size>1 1 1</size></box></geometry>
+        <material><ambient>0.4 0.8 0.4 1</ambient><diffuse>0.4 0.8 0.4 1</diffuse></material>
+      </visual>
+    </link>
+  </model>
+</sdf>
